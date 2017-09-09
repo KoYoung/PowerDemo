@@ -1,0 +1,213 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,textarea,th,td
+	{
+	font: 12px/ 1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+body,html,input {
+	font: 12px/ 1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+	background-color: #fff
+}
+
+input {
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #DFDFDF;
+}
+.inputR {
+	height: 24px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.white,.white a {
+	color: #fff
+}
+
+.blue,.blue a {
+	color: #004499
+}
+
+.gray4,a.gray4 {
+	color: #999
+}
+
+.red,.red a,a.red {
+	color: red;
+}
+
+.green {
+	color: #0E774A
+}
+
+select optgroup {
+	color: #CAC8BB;
+}
+
+header {
+	display: block
+}
+
+.col-1 {
+	margin: 2px;
+	position: relative;
+	border: 0px solid #c4d5df;
+	zoom: 1;
+	background: url(../images/member_title.png) repeat-x;
+	position: relative;
+}
+
+.col-1 span.o1,.col-1 span.o2,.col-1 span.o3,.col-1 span.o4 {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	background: url(../images/fillet.png) no-repeat;
+	overflow: hidden
+}
+
+.col-1 span.o1 {
+	background-position: left -6px;
+	top: -1px;
+	left: -1px
+}
+
+.col-1 span.o2 {
+	background-position: right -6px;
+	top: -1px;
+	right: -1px
+}
+
+.col-1 span.o3 {
+	background-position: left -9px;
+	bottom: -1px;
+	left: -1px
+}
+
+.col-1 span.o4 {
+	background-position: right -9px;
+	bottom: -1px;
+	right: -1px;
+}
+
+.col-1 h5.title,.col-1 h6.title {
+	color: #386ea8;
+	padding: 10px;
+}
+
+.col-1 h6.title {
+	margin-bottom: 8px;
+	font-size: 14px
+}
+
+.col-1 div.content {
+	padding: 0px 10px 10px
+}
+
+.table_form {
+	font-size: 12px;
+	line-height:25px;
+}
+
+.table_top_left {
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+
+.table_form td {
+	padding-left: 12px;
+}
+
+.table_form th {
+	font-weight: normal;
+	text-align: right;
+	padding-right: 10px;
+	color: #777;
+}
+
+.table_form td label {
+	vertical-align: middle
+}
+
+.table_form td,.table_form th {
+	padding: 4px 0 4px 8px
+}
+
+.table_form td,.table_form th {
+	border-bottom: 1px solid #eee;
+}
+
+.table_td {
+	border-right: 1px solid #eee;
+}
+
+.colorpanel td,.colorpanel th {
+	padding: 0;
+	border-bottom: none;
+}
+
+
+
+
+.int label {
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+
+.int input {
+	padding: 1px 1px;
+	border: 1px solid #ccc;
+	height: 16px;
+}
+
+.sub {
+	padding-left: 100px;
+}
+
+.sub input {
+	margin-right: 10px;
+}
+
+.formtips {
+	width: 200px;
+	margin: 2px;
+	padding: 2px;
+}
+
+.onError {
+	background: #FFE0E9 url(../img/reg3.gif) no-repeat 0 center;
+	padding-left: 25px;
+}
+
+.onSuccess {
+	background: #E9FBEB url(../img/reg4.gif) no-repeat 0 center;
+	padding-left: 25px;
+}
+
+.high {
+	color: red;
+}
+img{
+	border:0px;
+}
+.selectStype{
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #DFDFDF;
+}

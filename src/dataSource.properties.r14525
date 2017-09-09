@@ -1,0 +1,17 @@
+#mysql
+mysql.database.driver=com.mysql.jdbc.Driver
+mysql.database.url=jdbc\:mysql\://127.0.0.1\:3306/test?useUnicode\=true&amp;amp;characterEncoding\=utf-8
+mysql.database.user=root
+mysql.database.password=123@qwe
+mysql.database.maxActive=20
+mysql.database.maxIdle=5
+mysql.database.maxWait=3000
+
+#oracle
+#oracle.database.driver=oracle.jdbc.driver.OracleDriver
+#oracle.database.url=jdbc\:oracle\:thin\:@192.168.168.172\:1521\:mrems
+#oracle.database.user=MREMS_test
+#oracle.database.password=MREMS
+#oracle.database.maxActive=100
+#oracle.database.maxIdle=30
+#oracle.database.maxWait=500

@@ -21,7 +21,7 @@ CREATE TABLE `mem_activity` (
   `act_remark` longtext,
   PRIMARY KEY (`act_id`),
   UNIQUE KEY `act_id` (`act_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_activitydetail
@@ -34,7 +34,7 @@ CREATE TABLE `mem_activitydetail` (
   `goods_Id` int(11) DEFAULT NULL,
   PRIMARY KEY (`act_detail_id`),
   UNIQUE KEY `act_detail_id` (`act_detail_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_card
@@ -57,7 +57,7 @@ CREATE TABLE `mem_card` (
   UNIQUE KEY `card_no` (`card_no`),
   KEY `FKD91EEB3A331768B4` (`mem_id`),
   CONSTRAINT `FKD91EEB3A331768B4` FOREIGN KEY (`mem_id`) REFERENCES `mem_member` (`mem_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_gift
@@ -71,7 +71,7 @@ CREATE TABLE `mem_gift` (
   `gift_integral` int(11) DEFAULT NULL,
   PRIMARY KEY (`gift_id`),
   UNIQUE KEY `gift_id` (`gift_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_member
@@ -92,7 +92,7 @@ CREATE TABLE `mem_member` (
   `mem_Tel` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`mem_id`),
   UNIQUE KEY `mem_id` (`mem_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_order
@@ -107,7 +107,7 @@ CREATE TABLE `mem_order` (
   `order_remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`order_no`),
   UNIQUE KEY `order_no` (`order_no`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_order_detail
@@ -122,7 +122,7 @@ CREATE TABLE `mem_order_detail` (
   `order_no` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`detail_id`),
   UNIQUE KEY `detail_id` (`detail_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3605 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=3605 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_payrecord
@@ -136,7 +136,7 @@ CREATE TABLE `mem_payrecord` (
   `score` int(11) DEFAULT NULL,
   PRIMARY KEY (`pay_Id`),
   UNIQUE KEY `pay_Id` (`pay_Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3604 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=3604 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_rank
@@ -149,7 +149,7 @@ CREATE TABLE `mem_rank` (
   `scoreLimit` int(11) DEFAULT NULL,
   PRIMARY KEY (`rank_Id`),
   UNIQUE KEY `rank_Id` (`rank_Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mem_score_rule
@@ -162,7 +162,7 @@ CREATE TABLE `mem_score_rule` (
   `type_Id`varchar(20) DEFAULT NULL,
   PRIMARY KEY (`rule_Id`),
   UNIQUE KEY `rule_Id` (`rule_Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_actioninfo
@@ -177,7 +177,7 @@ CREATE TABLE `share_actioninfo` (
   `action_name` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`action_id`),
   UNIQUE KEY `action_id` (`action_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_admin
@@ -192,7 +192,7 @@ CREATE TABLE `share_admin` (
   `staff_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`admin_name`),
   UNIQUE KEY `admin_name` (`admin_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_admin_role
@@ -206,7 +206,7 @@ CREATE TABLE `share_admin_role` (
   KEY `FK1403A3C6A0B13F2` (`role_id`),
   CONSTRAINT `FK1403A3C66F42ADD2` FOREIGN KEY (`admin_name`) REFERENCES `share_admin` (`admin_name`),
   CONSTRAINT `FK1403A3C6A0B13F2` FOREIGN KEY (`role_id`) REFERENCES `share_role` (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_data_base
@@ -219,7 +219,7 @@ CREATE TABLE `share_data_base` (
   `base_parent` int(11) DEFAULT NULL,
   PRIMARY KEY (`base_id`),
   UNIQUE KEY `base_id` (`base_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_deptement
@@ -232,7 +232,7 @@ CREATE TABLE `share_deptement` (
   `dept_sort` int(11) DEFAULT NULL,
   PRIMARY KEY (`dept_id`),
   UNIQUE KEY `dept_id` (`dept_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_per_action
@@ -246,7 +246,7 @@ CREATE TABLE `share_per_action` (
   KEY `FKD90773F8DB583BA0` (`action_id`),
   CONSTRAINT `FKD90773F872E56BE` FOREIGN KEY (`per_id`) REFERENCES `share_permitinfo` (`per_id`),
   CONSTRAINT `FKD90773F8DB583BA0` FOREIGN KEY (`action_id`) REFERENCES `share_actioninfo` (`action_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_permitinfo
@@ -257,7 +257,7 @@ CREATE TABLE `share_permitinfo` (
   `per_name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`per_id`),
   UNIQUE KEY `per_id` (`per_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_role
@@ -268,7 +268,7 @@ CREATE TABLE `share_role` (
   `role_name` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`role_id`),
   UNIQUE KEY `role_id` (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_role_per
@@ -282,7 +282,7 @@ CREATE TABLE `share_role_per` (
   KEY `FKEA838234A0B13F2` (`role_id`),
   CONSTRAINT `FKEA83823472E56BE` FOREIGN KEY (`per_id`) REFERENCES `share_permitinfo` (`per_id`),
   CONSTRAINT `FKEA838234A0B13F2` FOREIGN KEY (`role_id`) REFERENCES `share_role` (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for share_staff
@@ -306,7 +306,7 @@ CREATE TABLE `share_staff` (
   UNIQUE KEY `staff_Id` (`staff_Id`),
   KEY `FK1842D2803F0D8E7B` (`dept_Id`),
   CONSTRAINT `FK1842D2803F0D8E7B` FOREIGN KEY (`dept_Id`) REFERENCES `share_deptement` (`dept_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------

@@ -1,6 +1,6 @@
 #mysql
 mysql.database.driver=com.mysql.jdbc.Driver
-mysql.database.url=jdbc\:mysql\://127.0.0.1\:3306/test?useUnicode\=true&amp;amp;characterEncoding\=utf-8
+mysql.database.url=jdbc\:mysql\://192.168.1.77\:3306/powerdemo?useUnicode\=true&amp;amp;characterEncoding\=utf-8
 mysql.database.user=root
 mysql.database.password=root
 mysql.database.maxActive=20
